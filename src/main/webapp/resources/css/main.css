@@ -1,0 +1,306 @@
+@charset "ISO-8859-1";
+
+/* Add background colour to jsp's */
+body{
+	background-color:AliceBlue;
+}
+
+/* Align text to the centre of the page within section's */
+section{
+	text-align:center;
+}
+/* Set font style with the paragraph's */
+p{
+	font-family:Helvetica,Georgia ,serif, "san-serif";
+	font-size:16px;
+}
+/* add style to the spring forms used */
+form:form{
+	padding:16px;
+	background-color:Linen;
+	font-size:15px;
+	font-family: Helvetica now, Georgia ,serif, "san-serif";
+	box-sizing:border-box;
+}
+
+/* Add style to all tables used*/
+table {
+  font-family: Helvetica now, Georgia ,serif, "san-serif" ;
+  border-collapse: collapse;
+  width: 100%;
+}
+/* Add style to tables data and head*/
+td,th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+
+/* Add style to tables rows*/
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+/* Set centre of page attributes*/
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+/* Set Form container attributes to be used across all login forms */
+.formContainer{
+  position: absolute;
+  display: block;
+  right:0;
+  width: 20%;
+  height:94%;
+  padding: 16px;
+  background-color: rgb(255, 255, 255);
+}
+
+/* Full-width input fields */
+ input[type= text], input[type=password] {
+  width: 40%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+/* Style input fields */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: rgb(128, 128, 192);
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+}
+/* Set opacity attribute for submit button */
+.btn:hover {
+  opacity: 1;
+}
+
+/* Style logout button*/
+.actionBtn{
+  position:absolute;
+  right:50%;
+  left:50%;
+  background-color: rgb(128, 255, 255); 
+  color: powderblue;
+  padding: 16px 20px;
+  border:none;
+  cursor: pointer;
+  width: 90px;
+  opacity: 0.9;
+}
+
+/* Set opacity on hover on logout button*/
+.actionBtn.hover{
+	opacity: 1;
+}
+/*Style logout button*/
+.logoutBtn{
+  position:absolute;
+  right: 65px;
+  background-color: powderblue;
+  color: black;
+  padding: 10px 10px;
+  border:none;
+  cursor: pointer;
+  width: 50px;
+  opacity: 0.9;
+}
+
+/* Set opacity on hover on logout button*/
+.logoutBtn.hover{
+	opacity: 1;
+}
+/* Style navigation links */
+a:link, a:visited {
+  background-color: powderblue;
+  color: black;
+  border: 2px solid rgb(128, 128, 192);
+  padding: 10px 20px;
+  text-align: center;
+  font-family:Helvetica now,Georgia ,serif, "san-serif";
+  text-decoration: none;
+  display: block-inline;
+  justify-content:center;
+  align-items:center;
+  border-radius: 25px;
+}
+/* Set font style with the paragraph's */
+p{
+	font-family:Helvetica now,Georgia ,serif, "san-serif";
+	font-size:16px;
+}
+
+/* Set the font style to be displayed when displaying information back to users */
+i{
+	font-family:Helvetica now,Georgia ,serif, "san-serif";
+	font-size:18px;
+	font-style:italic;
+	color:red;
+}
+
+/* Set header 1 font style*/
+h1{
+	font-size:40px;
+	font-family: Helvetica,Georgia ,serif, "san-serif";
+	color:rgb(255, 128, 192);
+	text-align:center;
+	
+}
+
+/* Set header 2 font style*/
+h2{
+	font-size:25px;
+	font-family: Helvetica now,Georgia ,serif, "san-serif";
+	color:rgb(255, 128, 192);
+	text-align:center;
+}
+
+/* Set header 3 font style*/
+h3{
+	font-size:15px;
+	font-family: Helvetica now,Georgia ,serif, "san-serif";
+	color:rgb(255, 128, 192);
+	text-align:center;
+}
+
+/* Add style and image to login form */
+.loginform{
+	 /* The image used */
+  background-image: url("/resources/images/hotel back.jpg");
+
+  /* Control the height of the image */
+  min-height: 500px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.homePageImage{
+   /*link background image  */	
+   background-image: url("/resources/images/hotel front.jpg");
+
+  /* Control the height of the image */
+  min-height: 500px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+	
+}
+
+.registrationForm{
+  /* The image used */
+  background-image: url("/resources/images/swiimingPool.jpg");
+
+  /* Control the height of the image */
+  min-height: 500px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.resSearchForm{
+  /* The image used */
+  background-image: url("/resources/images/reception.jpg");
+
+  /* Control the height of the image */
+  min-height: 500px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.regUserHomeImage{
+	  /* The image used */
+  background-image: url("/resources/images/beach1.jpg");
+
+  /* Control the height of the image */
+  min-height: 480px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+	
+}
+
+.addHotelForm{
+  /* The image used */
+  background-image: url("/resources/images/hotel front.jpg");
+
+  /* Control the height of the image */
+  min-height: 500px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+	
+}
+
+.resResultPageImage{
+	 /* The image used */
+  background-image: url("/resources/images/calendar1.jpg");
+
+  /* Control the height of the image */
+  min-height: 300px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.userDetailsTable{
+  
+  font-family: Helvetica now, Georgia ,serif, "san-serif" ;
+  border-collapse: collapse;
+  margin-left:15%;
+  margin-right:15%;
+  width:70%;
+	
+}
+
+.userDetailsImage{
+		 /* The image used */
+  background-image: url("/resources/images/data1.jpg");
+
+  /* Control the height and width of the image */
+  min-height: 300px;
+  margin-right:15%;
+  margin-left:15%;
+  width:70%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
