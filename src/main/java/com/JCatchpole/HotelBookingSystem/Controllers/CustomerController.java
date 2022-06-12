@@ -114,12 +114,6 @@ public class CustomerController {
 		return "userAccountPage";
 	}
 	
-	//Handler method to retrieve the page to unregister a user 
-	@GetMapping("unregisterCustomerPage")
-	public String unregisterUserPage(Model model) {
-		return "";
-	}
-	
 	//Handler method to remove a user from the system's database
 	@PostMapping("unregisterUser")
 	public String unregisterUser(Model model) {

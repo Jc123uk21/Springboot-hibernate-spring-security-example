@@ -37,12 +37,7 @@ public class AdministratorController {
 	@Autowired
 	private AdministratorService adminService;
 	
-	//Handler method to handle requests for retrieving the administrator's home page
-	@GetMapping("/adminHome")
-	public String getAdmiinHome(Principal pricipal, Model model) {
-		
-		return "adminHomePage";
-	}
+	
 	
 	//Handler method to handle requests for retrieving the page for adding new administrators to the system
 	@GetMapping("/adminRegistrationPage")

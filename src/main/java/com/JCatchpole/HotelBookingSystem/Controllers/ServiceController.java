@@ -44,6 +44,13 @@ public class ServiceController {
 		return "regUserHome";
 	}
 	
+	//Handler method to handle requests for retrieving the administrator's home page
+	@GetMapping("/adminHome")
+	public String getAdmiinHome(Principal pricipal, Model model) {
+			
+		return "adminHomePage";
+	}
+	
 	//Handler method to retrieve the register user page
 	@GetMapping("/registerUserPage")
 	public String getRegisterPage(Model model) {
@@ -70,6 +77,12 @@ public class ServiceController {
 			model.addAttribute("reservation", newReservation);
 			return "findRoomPage";
 	}	
+	
+	//Handler method to retrieve the page to unregister a user 
+	@GetMapping("unregisterCustomerPage")
+	public String unregisterUserPage(Model model) {
+		return "unregisterCustomePage";
+	}
 
 	//Handler method to retrieve the post access denied page
 	@PostMapping("/getAccessDenied")
