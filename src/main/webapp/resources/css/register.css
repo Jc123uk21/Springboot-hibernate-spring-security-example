@@ -1,0 +1,86 @@
+/*User Registeration */
+.registration{
+	height: 760px;
+	background-image: url("/resources/images/beach2.jpg");
+	background-position: center;
+  	background-repeat: no-repeat;
+ 	background-size: cover;
+	color:var(--secondary-text-color);
+	position: relative;
+	
+}
+
+.register-form{
+	overflow: visible;
+	animation: rightSlideIn 1.2s ease-in;
+	height: 680px;
+	width: 400px;
+	justify-self: flex-start;
+	color: var(--secondary-text-color);
+		
+}
+
+.register-form h2{
+	font-weight: bold;
+}
+
+.register-form .card-1{
+	height:650px;
+	width: 300px;
+	position: left;
+}
+
+.register-form .form-control{
+	margin: 30px 0;
+}
+
+.register-form input[type = "text"],
+.register-form input[type = "email"],
+.register-form input[type = "password"],
+.register-form input[type = "tel"]{
+	border: 0;
+	border-bottom: 1.5px solid #b4becb;
+	width: 100%;
+	padding: 3px;
+	font-size: 16px;
+}
+
+/*Media queries for tablet and under*/
+@media(max-width: 768px){
+	.grid,
+	.registration .grid,
+	.footer .grid-3{
+	 grid-template-columns: 1fr;
+	 grid-template-rows: 1fr;
+	}
+	
+	.registration{
+		height: auto;
+
+	}
+	
+	.register-form .card{
+		width: 400;
+		justify-self: center;
+		margin: auto;
+		
+	}
+}
+
+/*Media queries for mobile*/
+@media(max-width: 500px){
+	.navbar{
+		height: 330px;
+	}
+	
+	
+	.navbar .flex{
+		flex-direction: column;
+	}
+	
+	.navbar ul{
+		padding: 10px;
+		background-color: rgba(0, 0 , 0, 0.1);
+	}
+	
+}

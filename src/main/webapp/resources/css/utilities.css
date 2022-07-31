@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+
+:root{	
+	--primary-color: #FAFAD2;
+	--secondary-color: #FFEFD5;
+	--dark-color: 	#EEE8AA;
+	--light-color: #f4f4f4;
+	--primary-text-color: #333;
+	--secondary-text-color: #778899;
+}
+
+
+*{
+	box-sizing:border-box;
+	padding:0; 
+	margin:0;
+}
+
+body{
+	font-family:'Lato', sans-serif;
+	color: var(--primary-color);
+	line-height:1.6; 
+}
+
+h1,h2{
+	font-weight:300;
+	line-height:1.2;
+	margin: 10px 0;
+}
+
+ul{
+	list-style-type:none;
+}
+
+
+
+a{
+	text-decoration:none;
+	color: var(--secondary-text-color);
+}
+
+.text-center{
+	text-align: center;
+}
+
+/*Margins*/
+
+/*all around*/
+.m-1{
+	margin: 1rem;
+}
+
+.m-2{
+	margin: 1.5rem;
+}
+
+.m-3{
+	margin: 2rem;
+}
+
+.m-4{
+	margin: 3rem;
+}
+
+.m-5{
+	margin: 4rem;
+}
+
+/*y axis*/
+
+.my-1{
+	margin: 1rem 0;
+}
+
+.my-2{
+	margin: 1.5rem 0;
+}
+
+.my-3{
+	margin: 2rem 0;
+}
+
+.my-4{
+	margin: 3rem 0;
+}
+
+.my-5{
+	margin: 4rem 0;
+}
+
+/* Padding all around*/
+.pd-1{
+	padding: 1rem;
+}
+
+.pd-2{
+	padding: 1.5rem;
+}
+
+.pd-3{
+	padding: 2rem;
+}
+
+.pd-4{
+	padding: 3rem;
+}
+
+.pd-5{
+	padding: 4rem;
+}
+
+/*y axis*/
+
+.pdy-1{
+	padding: 1rem 0;
+}
+
+.pdy-2{
+	padding: 1.5rem 0;
+}
+
+.pdy-3{
+	padding: 2rem 0;
+}
+
+.pdy-4{
+	padding: 3rem 0;
+}
+
+.pdy-5{
+	padding: 4rem 0;
+}
+
+
+/*Style navigation bar*/
+.navbar{
+	animation: topSlideIn 1.2s ease-in;
+	background-color: var(--primary-color);
+	color: var(--secondary-text-color);
+	height:70px;
+}
+.navbar ul{
+	display:flex;
+}
+
+.navbar a{
+	color: var(--secondary-text-color);
+	padding:10px;
+	margin:0 5px;
+}
+
+.navbar a:hover{
+	border-bottom: 3px #fff solid;
+	
+}
+
+
+.navbar .flex{
+	justify-content:space-between;
+}
+
+
+/*Containers and cards*/
+.container{
+	max-width:1100px;
+	margin: 0 auto;
+	overflow: auto;
+	padding: 0 40px;
+}
+
+.flex{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	
+}
+
+.grid{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	gap: 20px;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+.grid-3{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	gap: 20px;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	}
+
+.card-1{
+	background-color: #fff;
+	color: var(--secondary-text-color);;
+	border-radius: 10px;
+	box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+	padding: 20px;
+	margin: 10px;
+	z-index: 100;
+}
+
+
+/*forms, inputs and btns*/
+
+.form input:focus{
+	outline: none;
+}
+
+.btn{
+	display: inline-block;
+	padding: 10px 30px;
+	cursor: pointer;
+	background: var(--primary-color);
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+}
+
+.btn-outline{
+	background-color: transparent;
+	border: 1px #fff solid;
+}
+.btn:hover{
+	transform: scale(0.98);
+}
+
+/*Backgrounds & coloured buttons*/
+
+.bg-primary, 
+.btn-primary{
+	background-color: var(--primary-color);
+	color: var(--secondary-text-color);
+}
+
+.logoutBtn{
+ display: inline-block;
+ position: left;
+ cursor: pointer;
+ border: none;
+ background-color: var(--primary-color);
+ color:#fff;
+ height: 50px;
+ width: 50px;
+ padding-bottom: 10px;	
+}
+.bg-secondary, 
+.btn-secondary{
+	background-color: var(--secondary-color);
+	color:var(secondary-text-color);
+}
+
+
+.bg-dark,
+.btn-dark{
+	background-color: var(--dark-color);
+	color: var(--secondary-text-color);
+}
+
+.bg-light, 
+.btn-light{
+	background-color: var(--light-color);
+	color:#333;
+}
+
+/*Text sizes*/
+
+.lead{
+	font-size: 20px;
+}
+
+.very-small{
+	font-size:0.85rem;
+}
+.small{
+	font-size: 1rem;
+}
+
+.medium{
+	font-size: 2rem;
+}
+
+.large{
+	font-size: 3rem;
+}
+
+.extra-large{
+	font-size: 4rem;
+}
+
+/*footer*/
+
+.footer{
+	animation: bottomSlideIn 1.2s ease-in;
+	color: var(--secondary-text-color);
+}
+
+.footer .socials a{
+	margin: 0 10px;
+	color: var(--secondary-text-color);
+}
+
+.footer .socials  img{
+	max-width: 40px;
+	max-height: 40px;
+	background-repeat: no-repeat;
+}
+
+/*Animations*/
+
+@keyframes leftSlideIn{
+	0%{
+		transform: translateX(-100%);
+	}
+	
+	100%{
+		transform: translateX(0);
+	}
+}
+
+@keyframes rightSlideIn{
+	0%{
+		transform: translateX(100%);
+	}
+	
+	100%{
+		transform: translateX(0);
+	}
+}
+
+@keyframes topSlideIn{
+	0%{
+		transform: translateY(-100%);
+	}
+	
+	100%{
+		transform: translateX(0);
+	}
+}
+
+@keyframes bottomSlideIn{
+	0%{
+		transform: translateY(100%);
+	}
+	
+	100%{
+		transform: translateX(0);
+	}
+}

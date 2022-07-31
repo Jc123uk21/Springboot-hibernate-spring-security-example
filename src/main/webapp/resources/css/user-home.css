@@ -1,0 +1,43 @@
+.main-section{
+	height: 640px;
+	background-image: url("/resources/images/hotel back.jpg");
+	background-position: center;
+  	background-repeat: no-repeat;
+ 	background-size: cover;
+	color:var(--seconadry-text-color);
+	position:relative;
+}
+
+.main-section .grid{
+	overflow: visible;
+	grid-template-columns: 55% 45%;
+	gap: 30px;
+}
+
+.main-section .latest-deals{
+	animation: leftSlideIn 1.2s ease-in;
+	overflow: visible;
+	height: 680px;
+	width: 400px;
+	justify-self: flex-start;
+	color: var(--secondary-text-color);		
+}
+
+
+.main-section .admin-news{
+	animation: leftSlideIn 1.2s ease-in;
+	overflow: visible;
+	height: 680px;
+	width: 400px;
+	justify-self: flex-start;
+	color: var(--secondary-text-color);	
+}
+
+.main-section .card-1{
+	background-color: rgba(255,255,255,0.6);
+	box-shadow: rgba(0,0,0,0.5);
+	color: var(--primary-text-color);
+	height:350px;
+	width: 300px;
+	position: left;
+}

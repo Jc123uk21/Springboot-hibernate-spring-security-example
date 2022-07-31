@@ -61,7 +61,7 @@ public class ServiceController {
 	//Handler method to login a user
 	@GetMapping("login")
 	public String getLoginPage(Model model) {
-		return "customLogin";
+		return "index";
 	}
 	
 	
