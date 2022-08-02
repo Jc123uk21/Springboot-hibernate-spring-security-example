@@ -1,0 +1,84 @@
+.admin-registration{
+	height: 760px;
+	background-image: url("/resources/images/hotel back.jpg");
+	background-position: center;
+  	background-repeat: no-repeat;
+ 	background-size: cover;
+	color:var(--secondary-text-color);
+	position: relative;
+}
+
+.admin-register-form {
+	overflow: visible;
+	animation: rightSlideIn 1.2s ease-in;
+	height: 500px;
+	width: 250px;
+	position: right;
+	color: var(--secondary-text-color);
+}
+.admin-registration h2,
+.admin-register-form h2{
+	font-weight: bold;
+	color: var(--primary-text-color);
+}
+
+.admin-register-form .card-1{
+	color: var(--primary-text-color);
+	height:450px;
+	width: 250px;
+	position: relative;
+}
+
+.admin-register-form .form-control{
+	margin: 30px 0;
+}
+
+.admin-register-form input[type = "text"],
+.admin-register-form input[type = "email"],
+.admin-register-form input[type = "password"]{
+	border: 0;
+	border-bottom: 1.5px solid #b4becb;
+	width: 100%;
+	padding: 3px;
+	font-size: 16px;
+}
+
+/*Media queries for tablet and under*/
+@media(max-width: 768px){
+	.grid,
+	.admin-registration .grid,
+	.footer .grid-3{
+	 grid-template-columns: 1fr;
+	 grid-template-rows: 1fr;
+	}
+	
+	.admin-registration{
+		height: auto;
+
+	}
+	
+	.admin-register-form .card{
+		width: 400;
+		justify-self: center;
+		margin: auto;
+		
+	}
+}
+
+/*Media queries for mobile*/
+@media(max-width: 500px){
+	.navbar{
+		height: 330px;
+	}
+	
+	
+	.navbar .flex{
+		flex-direction: column;
+	}
+	
+	.navbar ul{
+		padding: 10px;
+		background-color: rgba(0, 0 , 0, 0.1);
+	}
+	
+}

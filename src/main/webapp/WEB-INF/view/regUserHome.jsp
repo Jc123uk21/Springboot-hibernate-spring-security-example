@@ -20,16 +20,6 @@
 	<div class ="container flex">
 	<!-- Main heading -->
     <h1 class = "bg-primary">Hotel Booking System</h1>
-    
-    <sec:authorize access = 'hasAnyAuthority("user")'>
-	<div align = "right">
-	<!-- show logout button to only logged in users -->
-		<form:form action = "logout" method = "POST" align = "right" class = "logoutBtn">
-			<input type = "submit" value = "logout"/>
-		</form:form>
-	</div>
-	</sec:authorize>
-    
 		<nav>
 		<ul>
 		<!-- navigation links accessible to both users and admin -->

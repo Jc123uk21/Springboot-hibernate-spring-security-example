@@ -1,0 +1,83 @@
+.delete-administrator{
+	height: 590px;
+	background-image: url("/resources/images/hotel back.jpg");
+	background-position: center;
+  	background-repeat: no-repeat;
+ 	background-size: cover;
+	color:var(--secondary-text-color);
+	position: relative;
+}
+
+.delete-admin-form{
+	overflow: visible;
+	animation: rightSlideIn 1.2s ease-in;
+	height: 280px;
+	width: 270px;
+	position: right;
+	color: var(--secondary-text-color);	
+}
+
+.delete-administrator h2,
+.delete-admin-form h2{
+	font-weight: bold;
+	color: var(--primary-text-color);
+}
+
+.delete-admin-form .card-1{
+	color: var(--primary-text-color);
+	height:240px;
+	width: 270px;
+	position: relative;
+}
+
+.delete-admin-form .form-control{
+	margin: 30px 0;
+}
+
+.delete-admin-form input[type = "email"]{
+	border: 0;
+	border-bottom: 1.5px solid #b4becb;
+	width: 100%;
+	padding: 3px;
+	font-size: 16px;
+}
+
+/*Media queries for tablet and under*/
+@media(max-width: 768px){
+	.grid,
+	.admin-registration,
+	.footer .grid-3{
+	 grid-template-columns: 1fr;
+	 grid-template-rows: 1fr;
+	}
+	
+	.delete-administrator{
+		height: auto;
+
+	}
+	
+	.delete-admin-form .card{
+		width: 400;
+		justify-self: center;
+		margin: auto;
+		
+	}
+}
+
+/*Media queries for mobile*/
+@media(max-width: 500px){
+	.navbar{
+		height: 330px;
+	}
+	
+	
+	.navbar .flex{
+		flex-direction: column;
+	}
+	
+	.navbar ul{
+		padding: 10px;
+		background-color: rgba(0, 0 , 0, 0.1);
+	}
+	
+}

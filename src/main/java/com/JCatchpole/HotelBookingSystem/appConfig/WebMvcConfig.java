@@ -80,7 +80,7 @@ public class WebMvcConfig implements WebMvcConfigurer {
 				DriverManagerDataSource dataSource = new DriverManagerDataSource();
 				//set datasource connection attributes
 				dataSource.setUsername("root");
-				dataSource.setPassword("root");
+				dataSource.setPassword("%Lampard8");
 				dataSource.setUrl("jdbc:mysql://localhost:3306/hotelreservationsystem?useTimezone=true&serverTimezone=UTC");
 				dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
 				return dataSource;
