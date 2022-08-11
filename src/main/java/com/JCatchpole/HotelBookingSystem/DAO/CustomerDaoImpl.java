@@ -47,14 +47,14 @@ public class CustomerDaoImpl implements CustomerDao {
 			
 			
 			//Add customer as a valid user into the spring security users table
-			Query query = session.createQuery("insert into users (username, password, enabled) values (:username, :password, :enabled)");
+			Query query = session.createNativeQuery("insert into users (username, password, enabled) values(:username,:password,:enabled)");
 			query.setParameter("username", newCustomer.getEmail());
 			query.setParameter("password", newCustomer.getPassword());
 			query.setParameter("enabled", 1);
 			query.executeUpdate();
 			
 			//Add customer authority into spring security authorities table/
-			Query query1 = session.createQuery("INSERT INTO authorities (username, authority) VALUES(?, ?)");
+			Query query1 = session.createNativeQuery("INSERT INTO authorities (username, authority) VALUES(?, ?)");
 			query1.setParameter(1, newCustomer.getEmail());
 			query1.setParameter(2, newCustomer.getRole());
 			query1.executeUpdate();

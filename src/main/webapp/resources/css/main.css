@@ -35,7 +35,7 @@
 	margin: 30px 0;
 }
 
-.information-login input[type = "text"],
+.information-login input[type = "email"],
 .information-login input[type = "password"]{
 	border: 0;
 	border-bottom: 1.5px solid #b4becb;

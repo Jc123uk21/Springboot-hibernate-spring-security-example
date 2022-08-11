@@ -10,16 +10,23 @@
 
 .main-section .grid{
 	overflow: visible;
-	grid-template-columns: 55% 45%;
+	grid-template-columns: repeat(4, 1fr);
 	gap: 30px;
+	display: grid;
+	justify-content: space-evenly;
 }
 
-.main-section .latest-deals{
+.main-section .container{
+	height: auto;
+}
+
+.main-section .news{
 	animation: leftSlideIn 1.2s ease-in;
 	overflow: visible;
 	height: 680px;
 	width: 400px;
-	justify-self: flex-start;
+	position: relative;
+	margin-left: 10px;
 	color: var(--secondary-text-color);		
 }
 
@@ -29,7 +36,7 @@
 	overflow: visible;
 	height: 680px;
 	width: 400px;
-	justify-self: flex-start;
+	justify-self: flex-end;
 	color: var(--secondary-text-color);	
 }
 
@@ -37,7 +44,69 @@
 	background-color: rgba(255,255,255,0.9);
 	box-shadow: rgba(0,0,0,0.5);
 	color: var(--primary-text-color);
-	height:350px;
+	height:380px;
 	width: 300px;
 	position: right;
+	text-align: center;
+	margin: 18px 10px 40px;
+	transition: transform 0.2s ease-in;
+}
+
+
+.card-1 header{
+	font-weight: bold;
+}
+
+.card-1 img{
+	padding:10px;
+	height: 260px;
+	width: 260px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.main-section .card-1:hover{
+	transform: translateY(-15px);
+}
+
+
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: var(--secondary-color);
+  color: var(--secondary-text-color);
+  cursor: pointer;
+  padding: 10px 30px;
+  width: 70%;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.collapsible:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 8px;
+  color: white;
+  float: right;
+  margin-left: 0.8px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
 }

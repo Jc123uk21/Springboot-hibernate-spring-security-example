@@ -1,4 +1,4 @@
-.delete-administrator{
+.delete-hotel{
 	height: 590px;
 	background-image: url("/resources/images/hotel back.jpg");
 	background-position: center;
@@ -8,33 +8,33 @@
 	position: relative;
 }
 
-.delete-admin-form{
+.delete-hotel-form{
 	overflow: visible;
 	animation: leftSlideIn 1.2s ease-in;
-	height: 280px;
-	width: 270px;
+	height: 200px;
+	width: 230px;
 	position: right;
 	color: var(--secondary-text-color);	
 }
 
-.delete-administrator h2,
-.delete-admin-form h2{
+.delete-hotel h2,
+.delete-hotel-form h2{
 	font-weight: bold;
 	color: var(--primary-text-color);
 }
 
-.delete-admin-form .card-1{
+.delete-hotel-form .card-1{
 	color: var(--primary-text-color);
-	height:240px;
-	width: 270px;
+	height:200px;
+	width: 230px;
 	position: relative;
 }
 
-.delete-admin-form .form-control{
+.delete-hotel-form .form-control{
 	margin: 30px 0;
 }
 
-.delete-admin-form input[type = "email"]{
+.delete-hotel-form input[type = "email"]{
 	border: 0;
 	border-bottom: 1.5px solid #b4becb;
 	width: 100%;
@@ -45,18 +45,18 @@
 /*Media queries for tablet and under*/
 @media(max-width: 768px){
 	.grid,
-	.admin-registration,
+	.delete-hotel,
 	.footer .grid-3{
 	 grid-template-columns: 1fr;
 	 grid-template-rows: 1fr;
 	}
 	
-	.delete-administrator{
+	.delete-hotel{
 		height: auto;
 
 	}
 	
-	.delete-admin-form .card{
+	.delete-hotel-form .card{
 		width: 400;
 		justify-self: center;
 		margin: auto;

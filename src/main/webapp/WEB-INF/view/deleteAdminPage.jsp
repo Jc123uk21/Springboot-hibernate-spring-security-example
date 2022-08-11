@@ -47,7 +47,9 @@
 			<form:form action = "/deleteAdminUser"  method = "POST" class = "formContainer">
 			<h2>Administrator's email</h2>
 			<div class = "form-control">
-				<label>Administrator email: </label><input type = "email" name = "email" required><br>
+				<div class = "form-control">
+				<label>Administrator email: </label><input type = "email" name = "email" value = "" required><br>
+				</div>
 			</div>
 			<input type = "submit" value = "delete" class = "btn btn-primary">
 			</form:form>

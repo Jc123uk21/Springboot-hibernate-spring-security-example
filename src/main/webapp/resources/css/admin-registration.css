@@ -10,7 +10,7 @@
 
 .admin-register-form {
 	overflow: visible;
-	animation: rightSlideIn 1.2s ease-in;
+	animation: leftSlideIn 1.2s ease-in;
 	height: 500px;
 	width: 250px;
 	position: right;

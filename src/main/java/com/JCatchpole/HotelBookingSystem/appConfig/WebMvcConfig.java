@@ -89,7 +89,7 @@ public class WebMvcConfig implements WebMvcConfigurer {
 			//Create a BCrypt password encoder to handle passwords
 			@Bean
 			public PasswordEncoder passwordEncoder() {
-				PasswordEncoder passwordEncoder = new BCryptPasswordEncoder(4);
+				PasswordEncoder passwordEncoder = new BCryptPasswordEncoder(14);
 				return passwordEncoder;
 				
 			}

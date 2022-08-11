@@ -193,6 +193,15 @@ a{
 	height: 100%;
 	}
 
+.grid-4{
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	gap: 20px;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
 .card-1{
 	background-color: #fff;
 	color: var(--secondary-text-color);;
@@ -200,7 +209,7 @@ a{
 	box-shadow: 0 3px 10px rgba(0,0,0,0.2);
 	padding: 20px;
 	margin: 10px;
-	z-index: 100;
+	z-index: 99;
 }
 
 
@@ -228,6 +237,71 @@ a{
 	transform: scale(0.98);
 }
 
+/* The dropdown container */
+.navbar .account-dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+
+
+/* Dropdown button */
+.account-dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: var(--primary-color);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; 
+  margin: 0; 
+}
+
+.dropbtn img{
+	height:35px;
+	width:35px;
+}
+
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--primary-color);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.logout .form .logoutBtn{
+ display: inline-block;
+ position: center;
+ cursor: pointer;
+ border: none;
+ background-color: var(--primary-color);
+ color: var(--secondary-text-color);
+ height: 50px;
+ width: 50px;
+ padding-bottom: 10px;	
+}
+
+/* Show the dropdown menu on hover */
+.navbar .account-dropdown:hover .dropdown-content {
+  display: block;
+  z-index: 100;
+}
+
+
 /*Backgrounds & coloured buttons*/
 
 .bg-primary, 
@@ -242,7 +316,7 @@ a{
  cursor: pointer;
  border: none;
  background-color: var(--primary-color);
- color:#fff;
+ color: var(--Secondary-text-color);
  height: 50px;
  width: 50px;
  padding-bottom: 10px;	

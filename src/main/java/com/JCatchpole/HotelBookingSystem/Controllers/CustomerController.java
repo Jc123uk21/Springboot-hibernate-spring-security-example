@@ -50,7 +50,7 @@ public class CustomerController {
 	
 
 	//Handler method to register a customer user within the database
-	@RequestMapping(value = "registerCustomer", method = RequestMethod.POST)
+	@RequestMapping(value = "/registerCustomer", method = RequestMethod.POST)
 	public String registerCustomerUser(@Valid @ModelAttribute("customer") Customer customer, BindingResult result) {
 		
 			System.out.println(customer.toString());		
@@ -60,7 +60,7 @@ public class CustomerController {
 			
 			//Check if the object has been added to the database or not and redirect to the appropriate resource
 			if(customerService.addNewCustomer(customer)==true) {
-				return "/customLogin";
+				return "index";
 			}else {
 				
 				

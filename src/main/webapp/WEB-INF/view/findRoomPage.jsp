@@ -21,15 +21,6 @@
 	<!-- Main heading -->
     <h1 class = "bg-primary">Hotel Booking System</h1>
     
-	<sec:authorize access = 'hasAnyAuthority("user")'>
-	<div align = "right">
-	<!-- show logout button to only logged in users -->
-		<form:form action = "logout" method = "POST" align = "right" class = "logoutBtn">
-			<input type = "submit" value = "logout"/>
-		</form:form>
-	</div>
-	</sec:authorize>
-
 	<!-- Anonymous user navigation -->
 	<sec:authorize access = "isAnonymous">
 	<nav>
@@ -50,6 +41,17 @@
 				<li><a href = "/findRoom">Search Stay</a></li>
 				<li><a href = "/bookingsList">My Bookings</a></li>
 				<li><a href = "/accountDetails">My Account</a></li>
+				<li> <div class="account-dropdown">
+					<button class="dropbtn"><img src ="/resources/images/user.png"></img></button>
+    					<div class="dropdown-content">
+      						<div class = "logout">
+     						 <form:form action = "logout" method = "POST">
+     						 <input type = "submit" value = "logout" class = "logoutBtn">
+     						 </form:form>
+     						 </div>
+    					</div>
+ 				</div>
+ 			</li>
 			</ul>
 		</nav>
 	</sec:authorize>

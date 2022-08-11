@@ -47,16 +47,16 @@
 			<form:form action = "/addAdminUser" modelAttribute = "newAdministrator" method = "POST" class = "formContainer">
 				<h2>Registration Details</h2>
 				<div class = "form-control">
-					<label>First Name: </label><form:input path = "firstName"  maxlength="50" required = "true"></form:input><br>
+					<label>First Name: </label><form:input path = "firstName" placeholder = "" maxlength="50" required = "true"></form:input><br>
 				</div>
 				<div class = "form-control">
-					<label>Last Name: </label><form:input path = "lastName" maxlength="50" required = "true"></form:input><br>
+					<label>Last Name: </label><form:input path = "lastName" placeholder= "" maxlength="50" required = "true"></form:input><br>
 				</div>
 				<div class = "form-control">
-					<label>Email: </label><form:input type = "email" path ="email"  required = "true"></form:input><br>
+					<label>Email: </label><form:input type = "email" path ="email" placeholder = ""  required = "true"></form:input><br>
 				</div>
 				<div class = "form-control">
-					<label>Password:</label><form:password path = "password"  maxlength = "15" required = "true"></form:password><br>
+					<label>Password:</label><form:password path = "password"  placeholder = "" maxlength = "15" required = "true"></form:password><br>
 				</div>
 				<br>
 				<input type = "submit" value = "Register" class = "btn btn-primary">

@@ -53,9 +53,9 @@
 				<i>Logged out successfully</i>
 			</c:if>
 			<!-- create spring form to collect login details -->
-			<form:form  action = "process-login" method = "POST" class = "formContainer">
+			<form:form  action = "/process-login" method = "POST" class = "formContainer">
 				<div class = "form-control">
-					<label for ="eamil">Email: </label><input type = "text"  name = "username" required/><br>
+					<label for ="eamil">Email: </label><input type = "email"  name = "username" required/><br>
 				</div>
 				<div class = "form-control">
 					<label for = "password">Password: </label><input type = "password"  name = "password" required/><br>

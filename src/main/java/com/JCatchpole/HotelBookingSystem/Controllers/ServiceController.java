@@ -68,7 +68,7 @@ public class ServiceController {
 	//Handler method to logout a user
 	@GetMapping("logout")
 	public String logout() {
-		return "";
+		return "index";
 	}
 	
 	//Handler method to retrieve the search hotels page
